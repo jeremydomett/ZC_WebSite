@@ -6,9 +6,26 @@
  * To change this template use File | Settings | File Templates.
  */
 
-Ext.define('SMS.controller.Main',{
+Ext.define('zc.controller.Main',{
 	extend:'Ext.app.Controller',
+
+	stores:[
+		'userStore'
+	],
+
+	models:[
+		'userModel'
+	],
+
+	views:[
+		'Header',
+		'Menu',
+		'South',
+		'TabPanel',
+		'user.user'
+	],
+
+
 	init:function(){
-		Ext.create('SMS.view.Viewport');
 	}
 })

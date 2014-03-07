@@ -5,16 +5,14 @@
  * Time: 下午6:44
  * To change this template use File | Settings | File Templates.
  */
-Ext.define('SMS.view.South',{
-	extend:'Ext.Toolbar',
+Ext.define('zc.view.South',{
+	extend:'Ext.panel.Panel',
 	initComponent:function(){
 		Ext.apply(this,{
 			id:'bottom',
 			region:'south',
 			height:23,
-			items:[
-				"asdfasdfasdfasdf"
-			]
+			html:"内容"
 		});
 		this.callParent(arguments);
 	}
